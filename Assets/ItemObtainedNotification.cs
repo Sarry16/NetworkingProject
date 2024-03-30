@@ -30,6 +30,7 @@ public class ItemObtainedNotification : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		//ABSTRACTION
         UpdateNextElement();
         UpdateShowing();
     }

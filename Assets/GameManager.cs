@@ -8,7 +8,7 @@ using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Current;
+    public static GameManager Current {get; private set;};
 
     public static bool isClient;
     public static bool lanSession;

@@ -45,6 +45,7 @@ public class NetMessage
     }
 }
 
+//INHERITANCE
 public class Net_ObjectPosition : NetMessage
 {
     float posX;
@@ -67,7 +68,8 @@ public class Net_ObjectPosition : NetMessage
         this.dirX = dirX;
         this.dirY = dirY;
     }
-
+	
+	//POLYMORPHISM
     public override void Serialize(ref DataStreamWriter writer)
     {
         writer.WriteByte((byte)code);
